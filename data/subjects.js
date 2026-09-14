@@ -25,12 +25,12 @@
 window.CPA = window.CPA || {};
 
 window.CPA.SUBJECTS = [
-  { id: 'kuaiji',   name: '会计',                 short: '会', color: '#2563eb', soft: '#eaf1ff', status: 'todo', note: '约30章 · 待整理' },
-  { id: 'shenji',   name: '审计',                 short: '审', color: '#7c3aed', soft: '#f3eeff', status: 'todo', note: '约23章 · 待整理' },
-  { id: 'caiguan',  name: '财务成本管理',         short: '财', color: '#d97706', soft: '#fff3e0', status: 'todo', note: '约20章 · 待整理' },
+  { id: 'kuaiji',   name: '会计',                 short: '会', color: '#2563eb', soft: '#eaf1ff', status: 'ready', note: '30章 · 已完整' },
+  { id: 'shenji',   name: '审计',                 short: '审', color: '#7c3aed', soft: '#f3eeff', status: 'ready', note: '23章 · 已完整' },
+  { id: 'caiguan',  name: '财务成本管理',         short: '财', color: '#d97706', soft: '#fff3e0', status: 'ready', note: '20章 · 已完整' },
   { id: 'shuifa',   name: '税法',                 short: '税', color: '#059669', soft: '#e6f7f1', status: 'ready', note: '14章 · 已完整' },
-  { id: 'jingjifa', name: '经济法',               short: '经', color: '#e11d48', soft: '#ffe9ee', status: 'todo', note: '约12章 · 待整理' },
-  { id: 'zhanlue',  name: '公司战略与风险管理',   short: '战', color: '#0284c7', soft: '#e8f5fd', status: 'todo', note: '约7章 · 待整理' },
+  { id: 'jingjifa', name: '经济法',               short: '经', color: '#e11d48', soft: '#ffe9ee', status: 'ready', note: '12章 · 已完整' },
+  { id: 'zhanlue',  name: '公司战略与风险管理',   short: '战', color: '#0284c7', soft: '#e8f5fd', status: 'ready', note: '7章 · 已完整' },
 ];
 
 window.CPA.chapters = window.CPA.chapters || {};
