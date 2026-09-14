@@ -37,13 +37,17 @@
   }
   function setCardStatus(status) {
     const subj = getSubject(), ch = getChapter();
+    const order = visibleOrder();
+    if (state.cardIdx >= order.length) return;
+    const realIdx = order[state.cardIdx];   // 真实卡片下标（筛选/随机时 ≠ cardIdx）
     const p = progressStore();
     p[subj.id] = p[subj.id] || {};
     p[subj.id][ch.id] = p[subj.id][ch.id] || {};
-    p[subj.id][ch.id][state.cardIdx] = status;
+    p[subj.id][ch.id][realIdx] = status;
     saveProgress(p);
+    state.flipped = false;
     renderChapterProgress();
-    updateNav();
+    renderCard();
   }
 
   function visibleOrder() {
