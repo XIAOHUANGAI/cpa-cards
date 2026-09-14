@@ -198,7 +198,7 @@
             </div>
             ${mnemonic}
             <div class="card-foot">
-              <button class="chip" data-act="master">✅ 已掌握</button>
+              <button class="chip" data-act="mastered">✅ 已掌握</button>
               <button class="chip" data-act="review">🔄 再复习</button>
               <span class="hint" style="margin-left:auto">点击卡片翻回</span>
             </div>
