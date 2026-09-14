@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CPA 考点速记卡 · 注册会计师备考</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- 顶部栏 -->
+  <header class="topbar">
+    <button class="icon-btn" id="menu-btn" title="章节目录">☰</button>
+    <div class="brand">
+      <div class="logo">证</div>
+      <div>
+        <div class="title">CPA 考点速记卡</div>
+        <div class="subtitle">注册会计师 · 六科备考</div>
+      </div>
+    </div>
+    <div class="spacer"></div>
+    <button class="search-btn" id="search-btn">🔍 <span class="slabel">搜索考点</span> <kbd>/</kbd></button>
+    <button class="icon-btn" id="theme-btn" title="切换明暗主题">🌙</button>
+  </header>
+
+  <div class="layout">
+    <!-- 侧栏：章节目录 -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-head">章节目录</div>
+      <div class="chapter-list" id="chapter-list"></div>
+      <div class="sidebar-foot">
+        💡 点击卡片可翻转查看答案<br/>空格 / ← → 键快速翻卡
+      </div>
+    </aside>
+
+    <!-- 主区 -->
+    <main class="main">
+      <!-- 科目标签 -->
+      <div class="subject-tabs" id="subject-tabs"></div>
+
+      <!-- 工具栏 -->
+      <div class="toolbar">
+        <div class="progress-wrap">
+          <div class="progress-label">
+            <span id="progress-text"></span>
+            <span id="progress-pct">0%</span>
+          </div>
+          <div class="progress-bar"><i id="progress-fill"></i></div>
+        </div>
+        <button class="chip" id="chip-key">⭐ 只看重点</button>
+        <button class="chip" id="chip-unmastered">📝 未掌握</button>
+        <button class="chip" id="chip-shuffle">🔀 随机</button>
+        <button class="chip" id="chip-reset">↺ 重置进度</button>
+      </div>
+
+      <!-- 卡片舞台 -->
+      <section class="stage" id="stage"></section>
+
+      <!-- 底部导航 -->
+      <nav class="nav">
+        <button class="nav-btn" id="btn-prev"><span class="arrow">←</span> 上一张</button>
+        <button class="nav-btn primary" id="btn-flip">🔄 翻转</button>
+        <span class="counter" id="counter">0 / 0</span>
+        <button class="nav-btn" id="btn-next">下一张 <span class="arrow">→</span></button>
+      </nav>
+    </main>
+  </div>
+
+  <!-- 搜索浮层 -->
+  <div class="search-overlay" id="search-overlay">
+    <div class="search-panel">
+      <div class="search-input-row">
+        <span>🔍</span>
+        <input type="text" id="search-input" placeholder="搜索考点、关键词、口诀…" autocomplete="off" />
+        <button class="icon-btn" id="search-close">✕</button>
+      </div>
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+
+  <!-- 数据 -->
+  <script src="data/subjects.js"></script>
+  <script src="data/shuifa.js"></script>
+  <!-- 后续科目数据文件在此追加 -->
+  <script src="js/app.js"></script>
+</body>
+</html>
