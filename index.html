@@ -18,6 +18,7 @@
       </div>
     </div>
     <div class="spacer"></div>
+    <button class="exam-btn" id="exam-btn">🎯 <span class="elabel">模拟考试</span></button>
     <button class="search-btn" id="search-btn">🔍 <span class="slabel">搜索考点</span> <kbd>/</kbd></button>
     <button class="icon-btn" id="theme-btn" title="切换明暗主题">🌙</button>
   </header>
@@ -77,6 +78,9 @@
     </div>
   </div>
 
+  <!-- 模拟考试浮层（含科目选择 / 考试界面 / 成绩单三态） -->
+  <div class="exam-overlay" id="exam-overlay"></div>
+
   <!-- 数据 -->
   <script src="data/subjects.js"></script>
   <script src="data/kuaiji.js"></script>
@@ -85,6 +89,13 @@
   <script src="data/shuifa.js"></script>
   <script src="data/jingjifa.js"></script>
   <script src="data/zhanlue.js"></script>
+  <script src="data/exam-shuifa.js"></script>
+  <script src="data/exam-kuaiji.js"></script>
+  <script src="data/exam-shenji.js"></script>
+  <script src="data/exam-caiguan.js"></script>
+  <script src="data/exam-jingjifa.js"></script>
+  <script src="data/exam-zhanlue.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/exam.js"></script>
 </body>
 </html>
